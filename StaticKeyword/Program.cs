@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace StaticKeyword
 {
@@ -39,6 +40,8 @@ namespace StaticKeyword
             var maxCount = Box.MaxCount;
             var elementsCount = box2.GetCurrentCount();
             var maxCountFormatted = Box.FormatMaxCount();
+
+            Console.ReadKey();
         }
     }
 }
