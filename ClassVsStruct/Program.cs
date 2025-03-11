@@ -7,22 +7,22 @@ namespace ClassVsStruct
         public int x;
         public int y;
 
-        //does not compile - struct can't have
+        //before C# 10 this would not compile - struct couldn't have
         //explicit parameterless constuctor
-        //public Point()
-        //{
+        public Point()
+        {
 
-        //}
+        }
 
-        //does not compile - all fields must be
+        //before C# 10 this would not compile - all fields must be
         //assigned in the constructor
-        //public Point(int x)
-        //{
+        public Point(int x)
+        {
 
-        //}
+        }
 
         //does not compile - structs can't have destructors
-        //public ~Point() 
+        //public ~Point()
         //{
 
         //}
